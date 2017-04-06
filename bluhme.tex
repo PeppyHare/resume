@@ -1,0 +1,127 @@
+%!TEX TS-program = xelatex
+\documentclass[]{fancy-resume}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage[english]{babel}
+\hypersetup{
+    pdftitle={Resume - Evan Bluhm},
+    pdfauthor={Evan Bluhm},
+    pdfsubject={Resume - Evan Bluhm},
+    pdfkeywords={resume evan bluhm ibm software engineer},
+    colorlinks=false,       % no lik border color
+   allbordercolors=white    % white border color for all
+}
+% \addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+\header{Evan}{Bluhm}
+      {Software Engineer}
+      
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{Frameworks \& Skills}
+    ~
+    \textbf{Server Administration, Git, MySQL, Docker, Jenkins, Ruby on Rails, Cucumber/Behave, Elasticsearch, Kibana, Logstash, Selenium, UrbanCode Deploy, Gerrit, Vyatta Firewall, SoftLayer, 2D Drafting, Linear Algebra, Vector Calculus, Numerical Analysis, \LaTeX}
+    ~
+  \section{Languages}
+    ~
+    \textbf{Python}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{Bash}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{Ruby}\includegraphics[scale=0.40]{img/4stars.png} 
+    \textbf{Matlab}\includegraphics[scale=0.40]{img/4stars.png}
+    \textbf{Go}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{JavaScript}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{Java}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{C++}\includegraphics[scale=0.40]{img/2stars.png}
+    \textbf{Fortran}\includegraphics[scale=0.40]{img/2stars.png}
+    ~
+    \textbf{English}\includegraphics[scale=0.40]{img/5stars.png}
+    \textbf{Spanish}\includegraphics[scale=0.40]{img/3stars.png}
+    \textbf{Chinese}\includegraphics[scale=0.40]{img/3stars.png}
+  % \section{Personal Skills}
+  %   \includegraphics[scale=0.62]{img/personal.png}
+  %   ~
+  \section{Contact}
+    301 E Thomas St
+    Seattle, WA, 98102
+    ~
+    (919) 904-4318
+    ~
+    \href{mailto:bluhme3@gmail.com}{\textbf{bluhme3@}gmail.com}
+    ~
+    \href{https://github.com/peppyhare}{github.com/\textbf{PeppyHare}}
+    ~
+\end{aside}
+
+\section{Education}
+\begin{entrylist}
+  \entry
+    {2009 - 2013}
+    {Bachelors Degree in Physics and Mathematics}
+    {UNC Chapel Hill}
+    {GPA 3.7}
+  \entryoneline
+    {2007 - 2009}
+    {Alumni}
+    {North Carolina School of Science and in Mathematics}
+\end{entrylist}
+
+\section{Experience}
+\begin{entrylist}
+  \entry
+    {08/14-\\Present}
+    {DevOps Engineer}
+    {IBM}
+    {\begin{hyphenrules}{nohyphenation} Provided SCM, continuous integration, and continuous delivery tools as a service using Docker and other open-source tools. Designed and implemented a Jenkins build and CI service that is currently used by over 100 internal IBM teams. Presented in-person workshop-style DevOps training to IBM development teams across 7 campuses in 4 coutries to over 300 developers.  Developed monitoring frameworks and automation, performed server administration, and handled off-hour pager support.\\
+    \end{hyphenrules}}
+    \vspace{10pt}
+    \entry
+    {01/13-09/13}
+    {Research Assistant}
+    {UNC-CH Department of Physics}
+    {\begin{hyphenrules}{nohyphenation} Modeled novel nanoelectronic device interfaces using Lumerical software. Analyzed simulation output for polarization effects, transmission efficiency, and resonance effects.
+    \end{hyphenrules}}
+    \entry
+    {05/12-08/12\\05/13-08/13}
+    {Matlab Developer}
+    {UNC-CH Department of Biology}
+    {\begin{hyphenrules}{nohyphenation} Designed and developed high-speed camera calibration software written in Matlab and C++. Implemented, and tested a user-facing application used to calibrate high-speed field cameras, correct for lens distortion, and recreate 3D positions.
+    \end{hyphenrules}}
+\end{entrylist}
+
+\section{Personal}
+{\begin{hyphenrules}{nohyphenation} \textbf{Online Courseware:} Completed several on-line courses offered through the Coursera and edX initiatives. 
+\end{hyphenrules}}
+
+\begin{entrylist}
+  \entryoneline {6.002.1x} {Circuits and Electronics} {MITx}
+  \entryoneline {CS-169x} {Software-as-a-Service} {BerkeleyX}
+  \entryoneline {CS-191x} {Quantum Mechanics \& Quantum Computation} {BerkeleyX}
+  \entryoneline {6.00.1x} {Introduction to Computer Science} {MITx}
+\end{entrylist}
+
+\textbf{Interests:} Rock, classical, and folk guitarist, playing with various groups for the past 10 years. Avid rock climber, runner, backpacker, homebrewer, and coffee lover. Active Triangle Rock Club member. Aspiring to beat my personal Tar Heel 10-Miler best time. 
+
+\section{Publications}
+\textit{\textbf{Tailored polarization of optical propagation in heterostructured nanowires}}\\
+K. Skinner, Evan Bluhm, J. P. Strange, Sean Washburn\\
+\emph{Applied Physics Letters 105.13, 133114 (2014). 2014}
+
+\textbf{\textit{A protocol and calibration method for accurate multi-camera field videography}}\\
+Diane H. Theriault, Nathan W. Fuller, Brandon E. Jackson, Evan Bluhm, Dennis Evangelista, Zheng Wu, Margrit Betke, Tyson L. Hedrick\\
+\emph{Journal of Experimental Biology 217.11 (2014) pp. 1843–1848. Company of Biologists, 2014}
+% \printbibsection{article}{Publications}
+% \begin{refsection}
+%  \nocite{*}
+%  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, heading=subbibliography]
+% \end{refsection}
+\end{document}
